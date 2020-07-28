@@ -1,0 +1,26 @@
+
+<div class="container">
+    <h3 > Delete The Product List In My Fresh Corner</h3>
+<form [formGroup]="myForm" (ngSubmit)="OnSubmitDelete()">
+  <!-- <div class="form-group">
+    <label for="farmName">Farmer Name</label>
+    <input type="text" class="form-control" id="farmName" formControlName="farmName">
+</div> -->
+<div>
+<label for="prodName">Product Name</label>
+  <input type="text" class="form-control" formControlName="prodName">
+</div>
+<div>
+<label for="price">Price</label>
+  <input type="text" class="form-control" formControlName="price">
+</div>
+<div>
+<label for="prodInfo">Product Information</label>
+  <input type="text" class="form-control" formControlName="prodInfo">
+</div>
+
+  <br>
+    <button type="submit" mat-flat-button color="primary" >Delete</button>  
+    <!-- <button type="submit" mat-flat-button color="primary" onclick="OnSubmitDelete()">Delete</button>  -->
+</form>
+</div>

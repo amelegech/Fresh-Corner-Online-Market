@@ -1,0 +1,21 @@
+<div class="container">
+  <h5 style="color: rgb(122, 35, 93);">Fresh Corner Signup </h5>
+<form class="example-form" [formGroup]="myForm" (ngSubmit)="onSignUpSubmit()">
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter Farm Name</mat-label>
+        <input type="text" matInput placeholder="Enter Farm Name" formControlName="farmName" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter your email</mat-label>
+        <input type="email" matInput placeholder="Enter your email" formControlName="email" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+         <mat-label>Enter your password</mat-label> 
+        <input  type="password" matInput placeholder="Enter your password" formControlName="password" value="">
+      </mat-form-field>
+    </div>
+  
+  <button type="submit" mat-raised-button color="primary">Signup</button><br />
+</form>
+</div>

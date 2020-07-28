@@ -1,0 +1,42 @@
+
+<div class="container">
+    <mat-table [dataSource]="allFarm.data">
+        <!-- Farmer name Definition -->
+        <ng-container matColumnDef="farmName">
+          <mat-header-cell *matHeaderCellDef> Farmer Name </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.farmName}} </mat-cell>
+        </ng-container>
+      
+        <!-- Email Definition -->
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.email}}  </mat-cell>
+        </ng-container>
+      
+        <!-- Account Status -->
+        <ng-container matColumnDef="status">
+          <mat-header-cell *matHeaderCellDef>  Status </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.active ? 'Active' : 'Deactive'}} </mat-cell>
+        </ng-container>
+
+    <!-- Account Status -->
+    <ng-container matColumnDef="changestatus">
+      <mat-header-cell *matHeaderCellDef>Change Status </mat-header-cell>
+      <mat-cell *matCellDef="let row"> <button type="submit" mat-flat-button color="primary" *ngIf="row.active" (click)="onactiveChange(row._id, false)">Deactive</button> 
+         <button  type="submit" mat-flat-button color="primary" *ngIf="!row.active" (click)="onactiveChange(row._id,true)">Activate</button> </mat-cell>
+    </ng-container>
+        
+  <!-- reset password -->
+  <ng-container matColumnDef="resetpassword">
+    <mat-header-cell *matHeaderCellDef>   </mat-header-cell>
+    <mat-cell *matCellDef="let row">  <a  [routerLink]="['','farmers','farmerpassword']" [state]="{ id: row._id }" >Reset password</a> </mat-cell>
+  </ng-container>
+
+        <!-- Header and Row Declarations -->
+        <mat-header-row *matHeaderRowDef="['farmName', 'email', 'status','changestatus','resetpassword']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['farmName', 'email', 'status','changestatus','resetpassword']"></mat-row> 
+      </mat-table>
+</div>
+
+
+   

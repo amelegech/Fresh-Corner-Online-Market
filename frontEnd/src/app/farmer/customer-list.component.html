@@ -1,0 +1,40 @@
+<div class="container">
+    <mat-table [dataSource]="allCustomers.data">
+        <!-- Customer name Definition -->
+        <ng-container matColumnDef="fname">
+          <mat-header-cell *matHeaderCellDef> Customer Name </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.fname}} </mat-cell>
+        </ng-container>
+      
+        <!-- Email Definition -->
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.email}} </mat-cell>
+        </ng-container>
+
+       <!-- Account Status -->
+        <ng-container matColumnDef="status">
+       <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+       <mat-cell *matCellDef="let row"> {{row.active ? 'Active' : 'Deactive'}} </mat-cell>
+        </ng-container>
+      
+        <!-- Account Status -->
+        <ng-container matColumnDef="statusChange">
+          <mat-header-cell *matHeaderCellDef>Change Status </mat-header-cell>
+          <mat-cell *matCellDef="let row"> <button type="submit" mat-flat-button color="primary" *ngIf="row.active" (click)="onChangeStatus(row._id, false)">Deactive</button> 
+             <button  type="submit" mat-flat-button color="primary" *ngIf="!row.active" (click)="onChangeStatus(row._id, true)">Activate</button> </mat-cell>
+        </ng-container>
+
+         <!-- reset password -->
+  <ng-container matColumnDef="resetpassword">
+    <mat-header-cell *matHeaderCellDef>   </mat-header-cell>
+    <mat-cell *matCellDef="let row">  <a  [routerLink]="['','farmers','customerpassword']" [state]="{ id: row._id }" >Reset password</a> </mat-cell>
+  </ng-container>
+              <!-- Header and Row Declarations --> 
+         <mat-header-row *matHeaderRowDef="['fname', 'email', 'status','statusChange', 'resetpassword']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['fname', 'email', 'status','statusChange', 'resetpassword']"></mat-row>
+      </mat-table>
+</div>
+
+
+

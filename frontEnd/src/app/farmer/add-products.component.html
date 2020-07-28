@@ -1,0 +1,31 @@
+
+<div class="container">
+    <h3 > Add Products To My Fresh Corner List</h3>
+<form [formGroup]="myForm" (ngSubmit)="AddProductOnSubmit()">
+    <div class="form-group">
+        <label for="farmName">Farmer Name</label>
+        <input type="text" class="form-control" id="farmName" formControlName="farmName">
+    </div>
+    
+    <div class="form-group">
+    <label for="prodName">Product Name</label>
+      <input type="text" class="form-control" formControlName="prodName">
+    </div>
+    <div>
+    <label for="price">Price</label>
+      <input type="text" class="form-control" formControlName="price"> 
+    </div>
+    <div>
+    <label for="prodInfo">Product Information</label>
+      <input type="text" class="form-control" formControlName="prodInfo">
+      <div>
+    <label for="image">Image</label><br>
+      <input type="file"  formControlName="image"(change)="onchangeImage($event)"><br>
+  
+    </div>
+    </div>
+
+  <br>
+    <button type="submit" mat-flat-button color="primary" >Add Product</button>
+</form>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="container">
+<div *ngFor ="let product of allProducts$.data">
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+<p class="card-header">Products are Fresh & organic</p>
+<br>
+<img style="height: 200px; width: 100%; display: block;" [src]="product.image" alt="Card image">
+<br>
+    
+    <p>Product Name: {{product.prodName}} </p>
+    <p>Price:{{product.price}}</p>
+    <p>product Information: {{product.prodInfo}}</p>
+    
+<div>
+<button type="submit" mat-flat-button color="primary" [routerLink]="['','farmers','update_Product']" [state]="{ prod: product }">Update</button> ||
+<a type="submit" mat-flat-button color="primary" [routerLink]="['','farmers','delete_Product']" [state]="{ prod: product }">Delete</a>
+</div>
+<br>
+<hr>
+</div>
+</div>
+</div>

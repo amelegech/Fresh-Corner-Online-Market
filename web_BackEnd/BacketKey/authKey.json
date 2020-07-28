@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "feresh-corner-amele-miu",
+  "private_key_id": "84322cdd2150f70cd657e05a39298e3392b0b837",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbyCeu4b9KqjIW\n32pRBDjgUqVgaGl//wd16SwEdvAQnLVKrB10bCC6/cbsIil4PsqC4NFBVn/r/PPJ\ncJ+bRI9RJS8QYdac6xV35xYTBNJSWE5LYjQsZKSQbwLJvtBG/Bz3W/WvduGGZEUH\nDk709ldyXgVb15Yxb1xSHZN3BqacCztaIZ08QZlIo8io/bQCUNXA8E7HTCp2Z4EO\nNTq6egf/UP0yyCnaCwjkJbm+8X1FmlS6o8E+EkWw2M0A88n9iga+ENV4DwxLldCC\ntiiTSjEqAYYD4siu75yIm8Fkuymkj/9V6z5GyvRwrUIr9aX/UeQVClCVO3Cpb7Wi\nQbAcl1EbAgMBAAECgf970sN6F4lxieY3AjfU5/qbDd/aHscSNEdFeY2amgazqb0L\nhl5u3i4tuYoO0i/mNaW6kIvDuNbeCrXLvYMf/st/boNH31X1Nf4QzG8ztpmlN2Tl\nUDkwCGKm54adYSWQ+TFS0WC9ssDGdr5Xzei2j1ZIFZqJ6dK2QkJOKb+/jqjQVsCa\nvUwbaG1FfSDlsSjozaJMCBzr2AcRn/dIvPu17OOiX9z568nE+s8EvftXo5nn5hiE\nzoqYVCd6Vx5foAsEu6EAl28xu3fO76Js0iwVaa9JOsjt7LMeBGZVgnf9aPpDEVw+\nGy34412UCHBAGbBooAveSneK7aCJ44ut7flU1CECgYEAy+Cp3MFN9NUjS14DOcWV\nWLuTKJVs/OXIIvboS/jUl9/6G0NGI/NRZVOhoU6YNZ81hO7Fr7tWh3BbKqUYkf0d\nhVd0ngCH8mzh3/aGijbvCVO8FxzFFFkPhuvu4IWDDVyJyHqseZ/nZ30xZFxUmZ+N\nQSmbBLC9oDfqMEoBIqevi0sCgYEAw5u7bjZH3zjIiRVCYhKdOIoJB0JvAaRZrAQJ\n/ov4BYLQtbC5EJ9Ev710/4Oe42x3CGFR9vd6j/I/u8Qag3oq4YAau7hlI3HsalsL\nJTWmIZUSwQL3+KNujM1SFmEHskC5QqpbDvh25ItTDZrMUYm6YWmUsXj7N8fyX0TI\net3+X3ECgYEAn07cLD14NtndDGVXy+rSelWH9exdD3hV3MxmVAcJx+siOe9lfW4B\nqlWhNLR/R1cysL8LBfgy8v4ensIG4vyP9sORwmzTzeC61xCBrLqkKfueO8klTnMR\nKPJu5E4vS1+F4nvJDfifD0TKNYvYJ3p/G+3wzcd1RR6sBjOtk3DIQOUCgYB2SJ/I\nf45qj13Ed1STFYp4/A+FkkiqB4YqHK8me+FZA8fNdrYSNR1PjPNI54CXKam5KZB0\n9SXqEaU0l9sokiGIBv0jctfF3UgG8FMHBzAUsp6KlI76jWl2P1paKgaLZdQhWf6C\nSQEsJovseCUBUXWhHkVKJExVaNVJgsBwe/ksIQKBgQCmvVOe1Z46eiOeVD+ptmnj\nAWgYT3PpF+QDdl9m18BysGpX26PGDgR9jYI2g5CX+eurCWDyxu+CF/NmPyNwighN\n/E58zvlxm5j57fZQbNHlFgoMcQ7y8Rn0S5d1IAVC8q2bW104A74Ix3safP0BbaIs\nE2HAlewNaRhEkgnuE8sIxA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "fresh-corner-market@feresh-corner-amele-miu.iam.gserviceaccount.com",
+  "client_id": "113487338900205673773",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fresh-corner-market%40feresh-corner-amele-miu.iam.gserviceaccount.com"
+}

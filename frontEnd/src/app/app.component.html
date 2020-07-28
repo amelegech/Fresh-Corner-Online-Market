@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-indigo"  style="background-color: rgb(63, 5, 45);">
+  <a class="navbar-brand" href="#" style="color: rgb(24, 163, 19);">*Amele's Fresh Corner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['farmers', 'login']" style="color: rgb(236, 16, 163);">Home <span class="sr-only" style="color: rgb(236, 16, 163);">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!myToken" [routerLink]="['farmers', 'add_Products']" style="color: rgb(236, 16, 163);">Add Products</a> 
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!myToken" [routerLink]="['farmers', 'Products_List']" style="color: rgb(236, 16, 163);">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!myToken" [routerLink]="['farmers', 'orders']" style="color: rgb(236, 16, 163);">Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!myToken" [routerLink]="['farmers', 'farmLists']" style="color: rgb(236, 16, 163);">Farmers List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!myToken" [routerLink]="['farmers', 'customerLists']" style="color: rgb(236, 16, 163);">Customers List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['farmers', 'signup']" style="color: rgb(236, 16, 163);">Sign Up</a>
+      </li>
+      <li class="nav-item">
+      <button type="submit" mat-flat-button color="primary" (click)="myLogout()">Log Out</button>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+<hr>
+<div>
+  
+  <router-outlet> </router-outlet>
+</div>
+
+<!-- <div class="footer">
+<footer>
+  <h5  >Wel Come To My Fresh Corner!  © 2020 Amelework Cheklie</h5>
+</footer>
+</div>  -->

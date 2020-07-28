@@ -1,0 +1,26 @@
+
+<div class="container">
+    <h3 > Update Status</h3>
+<form [formGroup]="myForm" (ngSubmit)="changeStatus()">
+  <!-- <div class="form-group">
+    <label for="farmName">Farmer Name</label>
+    <input type="text" class="form-control" id="farmName" formControlName="farmName">
+</div> -->
+<div>
+<label for="status">Status</label>
+  <input type="text" class="form-control" formControlName="status">
+</div>
+<div>
+<label for="ProdList">Products List</label>
+  <input type="text" class="form-control" formControlName="ProdList">
+</div>
+<div>
+<label for="totalPrice">Product Information</label>
+  <input type="text" class="form-control" formControlName="totalPrice">
+</div>
+
+  <br>
+    <button type="submit" mat-flat-button color="primary" >Change Status</button>  
+    
+</form>
+</div>

@@ -1,0 +1,10 @@
+.footer {
+    padding: 50;
+     margin-right: 5px;  
+    /* margin: auto; */
+    /* width:2%; */
+    color:rgb(31, 175, 18);
+    background-color: rgb(45, 18, 65);
+    float: inline-end;
+    text-align: right;
+}

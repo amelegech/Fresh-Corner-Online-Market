@@ -1,0 +1,34 @@
+<div class="container">
+  <div *ngFor ="let order of allOrders.data">
+  <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+  <p class="card-header">Order list</p>
+  <br>
+  <img style="height: 200px; width: 100%; display: block;" src="../assets/fruit3.jpg" alt="Card image">
+  <br>
+   <!-- <p>order list: {{order.ProdList}}</p> -->
+   <p>order Status: {{order.status}}</p>
+   <div *ngFor ="let prod of order.ProdList">
+    <p>order list: {{prod}}</p>
+   </div>
+  <button type="submit" mat-flat-button color="primary" [routerLink]="['','farmers','status']" [state]="{ status: order }">Change Status</button> 
+  
+  </div>
+  <br>
+  <hr>
+  </div>
+  </div>
+  
+
+   <!-- <div>
+    <button type="submit" mat-flat-button color="primary" [routerLink]="['','farmers','status']" [state]="{ prod: product }">Update</button> ||
+    <a type="submit" mat-flat-button color="primary" [routerLink]="['','farmers','delete_Product']" [state]="{ prod: product }">Delete</a>
+    </div>  -->
+
+ 
+
+<!-- <button type="submit" mat-flat-button color="primary" (click)="changeStatus('ready')">ready</button>  
+<button type="submit" mat-flat-button color="primary" (click)="changeStatus('complete')">complete</button>  
+
+changestsus(state){
+  this.service.change(stats).
+} -->

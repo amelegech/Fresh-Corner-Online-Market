@@ -1,0 +1,18 @@
+.example-form {
+    min-width: 350px;
+    max-width: 400px;
+    padding: 50;
+    color: indigo
+    /* margin-right: 10px;
+    width:95%;
+    margin: auto;
+    background-color: rgb(9, 34, 22);
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(22, 7, 7);
+    box-shadow: 15px 4px rgb(7, 44, 2);    */
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
